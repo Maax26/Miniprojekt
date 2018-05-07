@@ -3,6 +3,7 @@ public class Main {
 
 	
 	public static void main(String[] args) {
-		System.out.println("Heh");
+		double dpbulke = 0;
+		System.out.println((dpbulke + 1) / 3 * 4);
 	}
 }
