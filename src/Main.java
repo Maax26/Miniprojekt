@@ -19,14 +19,17 @@ public class Main {
 	public Main() {
 		try {
 	         // Open an audio input stream.
-			Song song = new Song("HiHat", "drum", "HiHat.wav",14);
+			//Song song = new Song("HiHat", "drum", "HiHat.wav",14);
 			File soundFile = new File("HiHat.wav");
 			AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
 	         // Get a sound clip resource.
 	         Clip clip = AudioSystem.getClip();
 	         // Open audio clip and load samples from the audio input stream.
-	        clip.open(audioIn);
+	       // clip.open(audioIn);
 	        clip.start();
+	        clip.stop();
+	        
+	        clip.close();
 	      
 	      
 	      } catch (UnsupportedAudioFileException e) {
